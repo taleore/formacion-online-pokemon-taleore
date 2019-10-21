@@ -2,6 +2,7 @@ import React from "react";
 import fetchPokemons from "./services/fetchPokemons";
 import "./App.css";
 import Pokelist from "./components/Pokelist";
+import Filters from "./components/Filters";
 
 class App extends React.Component {
   constructor(props) {
@@ -57,7 +58,7 @@ class App extends React.Component {
     const { pokemons, query } = this.state;
     return (
       <div className="app">
-        <input type="text" onChange={this.getUserQuery} />
+        <Filters getUserQuery={this.getUserQuery} query={query} />
         <Pokelist pokemons={pokemons} query={query} />
       </div>
     );
