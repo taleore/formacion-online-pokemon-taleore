@@ -1,0 +1,77 @@
+.app {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: yellow;
+  }
+.poke_list {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 250px 250px;
+}
+
+.poke_card {
+    
+    list-style: none;
+
+
+}
+
+.card{
+    background-color: rgb(213, 208, 208);
+    border: solid rgb(143, 128, 128);
+    margin: 10px;
+    
+    
+}
+
+.card__name {
+    position: relative;
+    top:10px;
+    text-align: center;
+   
+}
+
+.card__container {
+    background-color:white;
+    text-align: center;
+    padding-bottom: 1px;
+    
+
+
+}
+.app_filters {
+    position: relative;
+    left: 150px;
+    width: 600px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 30px;
+    
+    
+}
+
+.card__img {
+    position: relative;
+    left: 25%;
+    top: 35px;
+
+    
+}
+
+.pokemon_types {
+    color: gray;
+    
+}
+
+.pokemon_id {
+    position: relative;
+    top: 19px;
+    color: rgb(53, 48, 48);
+    background-color: rgb(180, 172, 172);
+    width: 45px;
+    text-align: center;
+}
